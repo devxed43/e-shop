@@ -1,0 +1,21 @@
+img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.directory-item-container {
+  border: 0.5px solid black;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.directory-item-footer {
+  background: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
