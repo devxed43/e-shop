@@ -1,6 +1,7 @@
 import React from "react";
-import Directory from "../../components/directory/directory.component";
+
 import { Outlet } from "react-router-dom";
+import Directory from "../../components/directory/directory";
 
 const categories = [
   {
@@ -23,17 +24,12 @@ const categories = [
     title: "womens",
     imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
   },
-  {
-    id: 5,
-    title: "mens",
-    imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-  },
 ];
 
 const Home = () => {
   return (
     <div>
-      <Directory categories={categories} />;
+      <Directory categories={categories} />
       <Outlet />
     </div>
   );
